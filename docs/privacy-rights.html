@@ -1,31 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>铁镌隐私权利</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>隐私政策 · 铁镌 Iron Etch</title>
 <style>
-body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;max-width:920px;margin:0 auto;padding:24px;line-height:1.7;color:#222}
-h1,h2{line-height:1.3}
-a{color:#1663d6}
-.muted{color:#666;font-size:13px}
+:root{--bg:#0b0f14;--line:rgba(255,255,255,.1);--text:#f4f6f9;--muted:#9aa6b5;--accent:#e4b363;--accent2:#e76f51}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(900px 500px at 80% -10%,rgba(228,179,99,.1),transparent 60%),var(--bg);color:var(--text);font:15px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:42px 22px 80px}.brand{display:flex;align-items:center;gap:12px;margin-bottom:28px}.logo{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;color:#17130a;font-weight:900;font-size:20px}.brand b{font-size:18px}.brand small{display:block;color:var(--muted);font-size:11px;letter-spacing:.16em}
+.card{background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.018));border:1px solid var(--line);border-radius:22px;padding:28px 26px;margin:16px 0}
+h1{font-size:27px;line-height:1.3;margin:0 0 10px}h2{font-size:18px;margin:30px 0 10px;color:var(--accent)}h3{font-size:15px;margin:18px 0 6px}p,li{color:#dfe5ec}ul,ol{padding-left:22px}li{margin:5px 0}.muted{color:var(--muted)}.tag{display:inline-flex;padding:4px 9px;border:1px solid rgba(228,179,99,.35);border-radius:999px;color:var(--accent);font-size:11px;font-weight:800;letter-spacing:.08em}
+table{width:100%;border-collapse:collapse;margin:12px 0;font-size:13px}th,td{border:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top}th{background:rgba(255,255,255,.04);color:var(--muted);font-weight:700}.note{padding:12px 14px;border-left:2px solid var(--accent);background:rgba(228,179,99,.07);border-radius:0 10px 10px 0;color:#e9e4d7}.back{display:inline-flex;margin-top:18px;color:var(--accent);text-decoration:none;font-weight:800}
+@media(max-width:620px){.wrap{padding:26px 14px 60px}.card{padding:20px 16px}.brand small{letter-spacing:.08em}h1{font-size:22px}table{font-size:12px}}
+
+@media(max-width:640px){
+  body{font-size:14px;line-height:1.85}
+  .wrap{padding:20px 12px 50px}
+  .card{padding:18px 14px;border-radius:16px}
+  h1{font-size:21px;line-height:1.35}
+  h2{font-size:16px;margin:24px 0 8px}
+  h3{font-size:14px}
+  table{display:block;width:100%;overflow-x:auto;white-space:nowrap;font-size:12px}
+  th,td{padding:8px}
+  ul,ol{padding-left:19px}
+  .brand{margin-bottom:18px}
+  .brand small{letter-spacing:.06em}
+}
 </style>
 </head>
-<body>
-<h1>铁镌隐私权利</h1>
-<p class="muted">对应隐私政策：<a href="https://mrkedow.github.io/Iron-Etch-Privacy/privacy-policy.html">https://mrkedow.github.io/Iron-Etch-Privacy/privacy-policy.html</a></p>
-<h2>用户可行使的权利</h2>
+<body><main class="wrap">
+<div class="brand"><span class="logo">铁</span><div><b>Iron Etch 铁镌</b><small>PRIVACY &amp; DATA RIGHTS</small></div></div>
+<div class="card">
+<span class="tag">版本 2.0 · 更新于 2026-11-22</span>
+<h1>隐私政策与数据权利说明</h1>
+<p class="muted">铁镌重视你的训练数据和个人信息。本页说明我们收集什么、为什么收集、如何保护，以及你可以如何访问、更正、导出或删除。</p>
+<div class="note">核心原则：训练记录默认保存在本机；只有在你主动登录、购买、开启云同步或使用 AI 时，必要的数据才会按本政策处理。</div>
+
+<h2>一、我们是谁</h2>
+<p>铁镌（Iron Etch）是一款本地优先的训练记录与训练分析软件。账户、会员与支付服务由铁镌运营团队提供。隐私相关联系：<b>privacy@ironetch.mrkedow.cn</b>。</p>
+
+<h2>二、我们收集的信息</h2>
+<table>
+<tr><th>场景</th><th>信息</th><th>用途</th></tr>
+<tr><td>注册与登录</td><td>邮箱地址、密码哈希、登录会话、注册时间</td><td>创建账号、验证身份、保护账号安全</td></tr>
+<tr><td>购买会员</td><td>订单号、方案、金额、支付状态、授权码、支付宝交易号</td><td>确认购买、发放权益、处理退款、审计</td></tr>
+<tr><td>使用 App</td><td>训练记录、动作、组数/次数/重量、日期、身体数据、打卡照片（如你添加）</td><td>提供记录、历史、统计和 AI 分析；默认仅存本机</td></tr>
+<tr><td>云同步</td><td>你主动选择同步的训练记录、设置、头像/照片、字体等</td><td>多设备恢复与同步</td></tr>
+<tr><td>AI 功能</td><td>你选择发送的训练摘要、身体数据、聊天内容</td><td>生成教练建议；可在设置中精细控制发送范围</td></tr>
+<tr><td>安全与诊断</td><td>IP 地址、请求时间、错误日志、设备安装标识</td><td>防止滥用、限流、排查故障、保障服务安全</td></tr>
+</table>
+<p>我们不会收集精确位置、通讯录、短信或与训练无关的文件。相机/相册仅在你主动拍照或选择图片时访问。</p>
+
+<h2>三、本机数据与云数据</h2>
+<p>训练记录、历史、设置和照片默认保存在你的设备上。卸载或清除 App 数据可能导致本地数据丢失，建议定期导出备份。</p>
+<p>只有在你登录并主动使用云同步、AI 或购买服务时，相关数据才会传输到服务器。你可以在设置中关闭云同步、限制 AI 数据范围，或退出登录。</p>
+
+<h2>四、信息如何使用</h2>
 <ul>
-<li>访问和查看自己的训练数据</li>
-<li>新增、修改、删除训练记录</li>
-<li>关闭云同步、AI、网络访问等可选功能</li>
-<li>导出或备份训练数据</li>
-<li>卸载应用删除应用本地数据</li>
-<li>在隐私政策说明的数据范围与节点联系运营者</li>
+<li>提供训练记录、历史、统计、动作库、订阅和账号功能；</li>
+<li>验证支付、发放会员权益、绑定授权码、处理退款和防止重复退款；</li>
+<li>生成 AI 教练建议和知识解读（仅使用你授权的数据范围）；</li>
+<li>保障账号和服务安全，检测异常请求、滥用和故障；</li>
+<li>遵守法律义务、响应合法请求、维护我们的合法权利。</li>
 </ul>
-<h2>注意事项</h2>
-<p>本应用一切数据默认完全保存在本机，不会也无法上传到开发者服务器，由用户应妥善保管设备与备份数据。启用第三方云同步或 AI 服务时，数据处理还受对应服务商政策影响。</p>
-<h2>联系</h2>
-<p>数据与隐私相关请求：ethocas@outlook.com</p>
-</body>
-</html>
+<p>我们不会出售你的个人信息，也不会将训练记录用于与训练服务无关的广告画像。</p>
+
+<h2>五、共享与委托处理</h2>
+<p>为了完成服务，我们可能向以下受托方提供必要信息：</p>
+<ul>
+<li><b>支付宝</b>：处理支付、退款和交易校验；</li>
+<li><b>邮件服务商</b>：发送注册验证码、密码重置邮件；</li>
+<li><b>你选择的 AI 服务商</b>：仅发送你授权范围内的训练摘要或对话内容；</li>
+<li><b>云服务器/对象存储/CDN</b>：托管账号、支付接口、官网和安装包。</li>
+</ul>
+<p>我们只提供完成对应目的所必需的信息，并要求受托方采取合理的安全措施。除非法律要求或你明确授权，我们不会向其他第三方披露。</p>
+
+<h2>六、存储与安全</h2>
+<ul>
+<li>密码使用 PBKDF2-SHA256 加盐哈希保存，不保存明文密码；</li>
+<li>登录使用有时效的会话令牌；注册和重置验证码有有效期、尝试次数和频率限制；</li>
+<li>数据库采用参数化查询，接口限制请求体大小并对敏感操作限流；</li>
+<li>传输使用 HTTPS；服务器和数据库访问受最小权限控制；</li>
+<li>支付私钥、邮件密码等敏感配置只保存在服务器环境变量中，不写入客户端或仓库。</li>
+</ul>
+<p>互联网服务不存在绝对安全。若发生可能影响你权益的安全事件，我们会按法律要求及时告知。</p>
+
+<h2>七、保留期限</h2>
+<p>账号信息在账号存续期间保留；订单和退款记录按财务、审计和争议处理所需期限保留；安全日志保留较短期限。注销账号后，我们将删除或匿名化账号身份信息，但已购买会员权益可按购买条款保留至到期，订单记录可能匿名保留以满足财务/审计义务。</p>
+
+<h2>八、你的权利</h2>
+<ul>
+<li><b>访问与更正：</b>在 App 的账号页查看邮箱、方案和授权码；在设置中修改昵称、身体数据和头像。</li>
+<li><b>导出：</b>使用 App 的数据导出功能导出训练记录。</li>
+<li><b>删除/注销：</b>在 App 或官网账号页发起注销。注销后你将失去账户状态、特殊身份标识和退款能力；已购买会员权益仍可使用至到期。</li>
+<li><b>撤回同意：</b>可关闭云同步、AI 数据范围、相机/相册权限，或退出登录。</li>
+<li><b>投诉与联系：</b>通过 privacy@ironetch.mrkedow.cn 联系我们；我们会在合理期限内处理。</li>
+</ul>
+
+<h2>九、未成年人</h2>
+<p>本软件面向具备相应民事行为能力的用户。未成年人应在监护人同意和指导下使用；我们不会主动收集未成年人的敏感个人信息。</p>
+
+<h2>十、政策更新</h2>
+<p>当功能、数据处理方式或法律要求变化时，我们会更新本政策并标注版本和日期。重大变化会在 App 内提示，必要时重新征得你的同意。新政策不溯及既往，除非法律另有要求。</p>
+
+<h2>十一、安装与同意</h2>
+<p>首次安装或首次启动时，你需要阅读并同意本隐私政策和《会员购买与退款知情书》后才能继续。你可以先查看完整内容，再决定是否同意；不同意将无法使用需要账号和联网的功能。</p>
+
+<p class="note">继续使用铁镌，即表示你已阅读并理解本隐私政策。你可以在设置 → 关于中随时重新查看。</p>
+<a class="back" href="./">← 返回铁镌</a>
+</div>
+</main></body></html>
